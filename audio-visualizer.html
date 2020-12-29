@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Flocking Audio Visualizer</title>
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+	<!--Styles-->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--Scripts-->
+	<script src="src/main.js"></script>
+	<script src="src/audio.js"></script>
+	<script src="src/ui.js"></script>
+	<script src="src/utilities.js"></script>
+	<script src="src/flockmanager.js"></script>
+	<script src="src/flockmaker.js"></script>
+	<script src="src/loader.js"></script>
+	<script src="src/dat.gui.min.js"></script> <!--taken from https://github.com/dataarts/dat.gui-->
+</head>
+<body>
+<header>
+	<h1>Flocking Audio Visualizer</h1>
+	<h4>Click to scatter the flocks!</h4>
+</header>
+<section>
+	<article>
+		<canvas width="600" height="600"></canvas>
+	</article>
+</section>
+<section>
+	<article>
+		<div class="controls">
+			<select id="trackSelect">
+				<option value="media/New Adventure Theme.mp3" selected>New Adventure Theme</option>
+				<option value="media/Peanuts Theme.mp3">Peanuts Theme</option>
+				<option value="media/The Picard Song.mp3">The Picard Song</option>
+			</select>
+		</label>
+		<button id="fsButton">Full Screen</button>
+		</div>
+		<audio controls loop class="controls"></audio>
+	</article>
+</section>
+	
+</body>
+</html>
